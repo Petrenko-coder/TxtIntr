@@ -1,16 +1,16 @@
 CC = g++
 CFLAGS = -Wall -Wextra -std=c++11
-TARGET = calcullator.o
+TARGET = calculator
 
 all: $(TARGET)
 
 $(TARGET): calculator.cpp
-  $(CC) $(CFLAGS) calculator.cpp -o $(TARGET)
+ $(CC) $(CFLAGS) calculator.cpp -o $(TARGET)
 
 clean:
-  rm -f $(TARGET)
+ rm -f $(TARGET)
 
 help:
-  @echo "Usage: ./calculator.o -o <operation> <numbers>"
-  @echo "Operation can be: sum, average, median"
-  @echo "Example: ./calculator.o -o sum 1 2 3 4 5 6 7 8"
+ @echo "Usage: ./calculator -o <operation> <numbers>"
+ @echo "Operation can be: sum, average, median"
+ @echo "Example: ./calculator -o sum 1 2 3 4 5 6 7 8"
