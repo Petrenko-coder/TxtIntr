@@ -5,7 +5,7 @@ TARGET = calculator
 all: $(TARGET)
 
 $(TARGET): calculator.cpp
- $(CC) $(CFLAGS) calculator.cpp -o $(TARGET)
+$(CC) $(CFLAGS) calculator.cpp -o $(TARGET)
 
 clean:
  rm -f $(TARGET)
